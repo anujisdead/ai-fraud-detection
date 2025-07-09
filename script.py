@@ -5,7 +5,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import classification_report, confusion_matrix
 
 # Load the dataset
-df = pd.read_csv("upi_transactions_2024.csv")  # Replace with your actual file path
+df = pd.read_csv("upi_transactions_2024.csv") 
 
 # Drop irrelevant columns
 df.drop(columns=['transaction id', 'timestamp', 'transaction_status'], inplace=True)
